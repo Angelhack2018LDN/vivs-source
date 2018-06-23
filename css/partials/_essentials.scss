@@ -1,0 +1,96 @@
+.clear {
+//	content: "";
+//	display: table;
+	clear: both; }
+
+
+/*
+CENTERING
+http://www.w3.org/Style/Examples/007/center.en.html
+*/
+
+//centre an image: img.centre-horizontal:
+.centre-horizontal {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+//centre text in a div: div.centre-verticle
+.centre-verticle {
+	min-height: 10em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+//centre text both ways inside a div
+.centre-centre {
+	height: 10em;
+	position: relative;
+}
+.centre-centre p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+//centre a div in viewport
+.centre-viewport {
+	background: black;
+	color: white;
+	padding: 1em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+/*
+STICKY FOOTER
+<body>
+	<div id="wrapper">
+
+		<section>
+			Page content
+		</section>
+
+		<div id="footer-down"></div>
+
+		<footer id="page-footer">
+			Footer content
+		</footer>
+
+</div>
+</body>
+*/
+
+html, body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+#page-footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	//	height: 20em; //Same as the height of #footer-down
+}
+
+/*
+Added to style.css:
+#footer-down {padding-bottom:20em;} //Same as the height of #page-footer
+*/
+
+
+

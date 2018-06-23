@@ -1,0 +1,230 @@
+@import "partials/reset";
+@import "partials/var";
+@import "partials/skeleton";
+@import "partials/essentials";
+
+body {
+	background-color: $colour-main1;
+}
+
+p, p a {
+	font-family: $font-body1;
+	color: $colour-text1;
+}
+
+h1, h1 a {
+	font-family: $font-h1;
+	color: $colour-h1;
+	text-decoration: none;
+	margin-top: 1em;
+}
+
+h2, h2 a {
+	font-family: $font-h2;
+	color: $colour-h2;
+	text-decoration: none;
+}
+
+h3, h3 a {
+	font-family: $font-h3;
+	color: $colour-h3;
+	text-decoration: none;
+}
+
+h4,h5,h6, h4 a, h5 a, h6 a {
+	font-family: $font-h4;
+	color: $colour-h4;
+	text-decoration: none;
+}
+
+#footer-down {
+	padding-bottom:20em; /* Same as height as #page-footer */
+}
+
+#page-footer {
+	height: 20em; /* Same as height as #footer-down bottom padding */
+	font-family: $font-footer;
+	background-color: $colour-footer;
+	p, p a {
+		color: $colour-footer-text1;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		color: $colour-footer-h1;
+		font-size: 150%;
+	}
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	display: inline-block;
+	height: 38px;
+	padding: 0 30px;
+	color: $colour-button-text2;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: $colour-button2;
+	border-radius: 4px;
+	border: 1px solid $colour-button-border2;
+	cursor: pointer;
+	box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+	color: $colour-focus2;
+	border-color: $colour-focus-border2;
+	outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+	color: #FFF;
+	background-color: $colour-button1;
+	border-color: $colour-button-border1; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+	color: $colour-button-text1;
+	background-color: $colour-focus1;
+	border-color: $colour-focus-border1; }
+
+/* Nav menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#nav ul {
+	margin: 0;
+	padding:0;
+	width: 100%;
+	display: block;
+	list-style:none;
+	line-height: 3;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: $font-nav;
+}
+
+#nav li {display:inline;}
+
+#nav a {
+	background-color: $colour-nav1;
+}
+
+#nav a, #nav-toggle {
+	display: block;
+	padding: 0.5em;
+	text-decoration: none;
+	color: $colour-nav-text;
+	border-bottom: 1px solid $colour-nav-divider;
+}
+
+#nav-toggle {
+	background-color: $colour-nav2;
+	background-image: url(../images/menu.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	border: none;
+	padding: 1.2em;
+}
+
+#nav a:focus {background-color: $colour-nav3;}
+#nav a:active {background-color: $colour-nav3;}
+#nav a:hover {background-color: $colour-nav3;}
+
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.nav-collapse ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	list-style: none;
+}
+
+.nav-collapse li {
+	width: 100%;
+	display: block;
+}
+
+.js .nav-collapse {
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.nav-collapse.opened {
+	max-height: 9999px;
+}
+
+#nav-toggle {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 750px) {
+	#nav {
+		overflow: hidden;
+		zoom: 1;
+		background-color: $colour-nav1;
+	}
+	#nav a {
+		float: left;
+		padding: 0.2em 2em;
+		border-bottom: 0;
+		border-right: 1px solid $colour-nav-divider;
+	}
+	
+	.js .nav-collapse {
+		position: relative;
+	}
+	.js .nav-collapse.closed {
+		max-height: none;
+	}
+	#nav-toggle {
+		display: none;
+	}
+}
+
+
+/* Splash screens
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.background-tile {
+	background: url(../images/background-tile.png) repeat;
+	top:0;
+	bottom:0;
+	position: absolute;
+	width: 100%;
+}

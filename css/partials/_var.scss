@@ -1,0 +1,111 @@
+// ================= FONTS: IMPORT =================
+
+//Google fonts
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,300,400italic,400,600italic,600);
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
+
+// ================= FONTS: DEFINE =================
+
+//	body text, main
+$font-body1: "Source Sans Pro",sans-serif;
+
+//	body text, secondary
+$font-body2: "Playfair Display",serif;
+
+//	headings h1
+$font-h1: "Playfair Display",serif;
+
+//	headings h2
+$font-h2: "Playfair Display",serif;
+
+//	headings h3
+$font-h3: "Playfair Display",serif;
+
+//	headings h4 to h6
+$font-h4: "Source Sans Pro",sans-serif;
+
+// nav menu
+$font-nav: "Source Sans Pro",sans-serif;
+
+//	footer
+$font-footer: "Source Sans Pro",sans-serif;
+
+
+// ================= COLOURS =================
+
+//	main background
+$colour-main1: #d2d6d9;
+
+//	secondary background
+$colour-main2: #444444;
+
+//footer background
+$colour-footer: #444444;
+
+//	main accent
+$colour-accent1: #69b7bf;
+
+//	secondary accent
+$colour-accent2: #c6c8c4;
+
+//	alert
+$colour-accent3: #d9704a;
+
+//	main body text
+$colour-text1: #444444;
+
+//	secondary body text (on dark ground)
+$colour-text2: #282828;
+
+//	headings h1
+$colour-h1: #444444;
+
+//	headings h2
+$colour-h2: #444444;
+
+//	headings h3
+$colour-h3: #444444;
+
+//	headings h4 to h6
+$colour-h4: #444444;
+
+// footer body text
+$colour-footer-text1: #fff;
+
+// footer headings, h1 to h6
+$colour-footer-h1: #fff;
+
+// ================= NAV MENU =================
+
+//	menu background
+$colour-nav1: #69b7bf;
+
+//	menu background: collapsed toggle background
+$colour-nav2: #444444;
+
+//	menu background a:focus/hover/active
+$colour-nav3: #c6c8c4;
+
+//	menu item divider line
+$colour-nav-divider: #fff;
+
+//	menu text
+$colour-nav-text: #fff;
+
+// ================= BUTTONS =================
+
+//	button 1
+$colour-button-text1: #fff;
+$colour-button1: #69b7bf;
+$colour-button-border1: #69b7bf;
+$colour-focus1: #69b7bf;
+$colour-focus-border1: #69b7bf;
+
+//	button 2
+$colour-button-text2: #444444;
+$colour-button2: #d9704a;
+$colour-button-border2: #d9704a;
+$colour-focus2: #d9704a;
+$colour-focus-border2: #d9704a;
