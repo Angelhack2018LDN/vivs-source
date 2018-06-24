@@ -2,8 +2,7 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,300,400italic,400,600italic,600);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -217,9 +216,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.5em;
+  font-size: 1.7em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6; }
+  line-height: 1.8; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -539,31 +538,31 @@ Added to style.css:
 #footer-down {padding-bottom:20em;} //Same as the height of #page-footer
 */
 body {
-  background-color: #d2d6d9; }
+  background-color: #d7d6d5; }
 
 p, p a {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #444444; }
+  font-family: "Roboto", sans-serif;
+  color: #35312c; }
 
 h1, h1 a {
-  font-family: "Playfair Display", serif;
-  color: #444444;
+  font-family: "Roboto", serif;
+  color: #35312c;
   text-decoration: none;
   margin-top: 1em; }
 
 h2, h2 a {
-  font-family: "Playfair Display", serif;
-  color: #444444;
+  font-family: "Roboto", serif;
+  color: #35312c;
   text-decoration: none; }
 
 h3, h3 a {
-  font-family: "Playfair Display", serif;
-  color: #444444;
+  font-family: "Roboto", serif;
+  color: #35312c;
   text-decoration: none; }
 
 h4, h5, h6, h4 a, h5 a, h6 a {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #444444;
+  font-family: "Roboto", sans-serif;
+  color: #35312c;
   text-decoration: none; }
 
 #footer-down {
@@ -573,8 +572,8 @@ h4, h5, h6, h4 a, h5 a, h6 a {
 #page-footer {
   height: 20em;
   /* Same as height as #footer-down bottom padding */
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #444444; }
+  font-family: "Roboto", sans-serif;
+  background-color: #35312c; }
   #page-footer p, #page-footer p a {
     color: #fff; }
   #page-footer h1, #page-footer h2, #page-footer h3, #page-footer h4, #page-footer h5, #page-footer h6 {
@@ -591,7 +590,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #444444;
+  color: #35312c;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -600,9 +599,9 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #d9704a;
+  background-color: #f7931e;
   border-radius: 4px;
-  border: 1px solid #d9704a;
+  border: 1px solid #f7931e;
   cursor: pointer;
   box-sizing: border-box; }
 
@@ -616,8 +615,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #d9704a;
-  border-color: #d9704a;
+  color: #f7931e;
+  border-color: #f7931e;
   outline: 0; }
 
 .button.button-primary,
@@ -626,8 +625,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #69b7bf;
-  border-color: #69b7bf; }
+  background-color: #f7931e;
+  border-color: #f7931e; }
 
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -640,8 +639,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #69b7bf;
-  border-color: #69b7bf; }
+  background-color: #f7931e;
+  border-color: #f7931e; }
 
 /* Nav menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -654,13 +653,15 @@ input[type="button"].button-primary:focus {
   line-height: 3;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1em;
+}
 
 #nav li {
   display: inline; }
 
 #nav a {
-  background-color: #69b7bf; }
+  background-color: #f7931e; }
 
 #nav a, #nav-toggle {
   display: block;
@@ -670,7 +671,7 @@ input[type="button"].button-primary:focus {
   border-bottom: 1px solid #fff; }
 
 #nav-toggle {
-  background-color: #444444;
+  background-color: #35312c;
   background-image: url(../images/menu.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -722,7 +723,7 @@ input[type="button"].button-primary:focus {
   #nav {
     overflow: hidden;
     zoom: 1;
-    background-color: #69b7bf; }
+    background-color: #f7931e; }
 
   #nav a {
     float: left;
